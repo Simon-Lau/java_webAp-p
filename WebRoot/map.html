@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Map</title>
+		<meta name="author" content="tonylp" />
+		<link rel="stylesheet" href="mycss/map.css" />
+		<link rel="stylesheet" href="dataTable/css/jquery.dataTables.css" />
+		<link rel="stylesheet" href="dataTable/css/jquery.dataTables_themeroller.css" />
+		<link rel="stylesheet" href="dataTable/css/dataTable_lp.css" />
+		<script type="text/javascript" src="jsLib/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="dataTable/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=3E75A160f6441af57f6ad63a852cd5fd"></script>
+		<script type="text/javascript" src="myjs/map.js"></script>
+		<script type="text/javascript" src="myjs/searchMap.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				initMap();
+				getMark();
+				getData();
+				Search();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="head">
+		</div>
+		<div id="main">
+			<div id="div_1">
+				<div id="allmap">
+			    </div>
+                <div id="panel" style="position:absolute;"></div>
+			</div>
+			<div id="div_2">	
+			Search:<input type="text" id="suggestId" size="20" value="百度" style="width:150px;" />
+			<div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto;margin-left: 55px;"></div>
+			<br />
+			<input type="button" id="randomBtn" value="随机聊天"  style="width:100px;height:30px;" />
+			<div id ="userList">
+			</div>
+		</div>
+	</body>
+</html>

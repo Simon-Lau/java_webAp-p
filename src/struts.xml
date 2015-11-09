@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<include file="struts-default.xml" />
+	<constant name="struts.custom.i18n.resources" value="globalMessages" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="json-default">
+	
+		<action name="loginAction" class="cn.edu.hit.action.LoginAction">
+            <result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="registerAction" class="cn.edu.hit.action.RegisterAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="getFriendsAction" class="cn.edu.hit.action.GetFriendsAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="getUserNameAction" class="cn.edu.hit.action.GetUserNameAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="getSelfPositionAction" class="cn.edu.hit.action.GetSelfPositionAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="getPositionAction" class="cn.edu.hit.action.GetPositionAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="getAllUserAction" class="cn.edu.hit.action.GetAllUserAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="addFriendAction" class="cn.edu.hit.action.AddFriendAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="deleteFriendAction" class="cn.edu.hit.action.DeleteFriendAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+		<action name="showRecordAction" class="cn.edu.hit.action.ShowRecordAction">
+			<result type="json">
+				<param name="root">jsonObject</param>
+			</result>
+		</action>
+	</package>
+</struts>    

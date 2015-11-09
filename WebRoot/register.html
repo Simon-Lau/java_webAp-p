@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>register</title>
+		<meta name="author" content="tonylp" />
+		<link rel="stylesheet" href="mycss/register.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=3E75A160f6441af57f6ad63a852cd5fd"></script>
+		<script type="text/javascript" src="jsLib/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="myjs/map.js"></script>
+		<script type="text/javascript" src="myjs/search.js"></script>
+		<script type="text/javascript" src="myjs/register.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				initMap();
+				Search();
+				init();
+			});
+		</script>
+		<!-- Date: 2013-06-29 -->
+	</head>
+	<body>
+		<div id="head">
+		</div>
+		<div id="main">
+			<div id="div_1">
+			<table width="340" border="1" align="center">
+				    <tr>
+				      <td  width="90" >用户名：</td>
+				      <td width="150"><label>
+				      <input type="text" id="userName" /></label></td>
+				      <td width="100"><label id="errorName"></label></td>
+				    </tr>
+				    <tr>
+				      <td >密码：</td>
+				      <td><label>
+				      <input type="password" id="passWord" id="textfield3" />
+				      </label></td>
+				      <td>&nbsp;</td>
+				    </tr>
+				    <tr>
+				      <td >新密码：</td>
+				      <td><label>
+				      <input type="password" id="pwd2"/></label></td>
+				      <td><label id="errorPwd"></label></td>
+				    </tr>
+				    <tr>
+				      <td >Sex：</td>
+				      <td> <label><input name="sex" type="radio"  value="男"     checked="checked" /> 男
+				       <input type="radio" name="sex"  value="女" />女</label></td>
+				      <td>&nbsp;</td>
+				    </tr>
+				    <tr>
+				      <td>Pic:</td>
+				      <td><label>
+				      <select name="pic" id="pic" onchange="changepic();">
+				      <option value="2" selected="selected">头像2</option>
+					  <option value="3">头像3</option>
+					  <option value="4">头像4</option>
+					  <option value="5">头像5</option>
+					  <option value="6">头像6</option>
+				      <option value="7">头像7</option>
+				      </select>
+				      </label>
+				      <img src="mycss/images/headIcons/2.gif" id="showpic"/>
+				       </td>
+				      <td>&nbsp;</td>
+				    </tr>
+				     <tr>
+				      <td >位置：</td>
+				      <td>
+				      <input type="text" id="suggestId" size="20" value="哈尔滨" style="width:150px;" />
+				      <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto;"></div>
+				      </td>
+				     <td>&nbsp;</td>
+				    </tr>
+				    <tr>
+				      <td >经纬度：</td>
+				       <td><label id="locPoint"></label></td>
+				      <td>&nbsp;</td>
+				    </tr>
+				    <tr>
+				     <td>&nbsp;</td>
+      				<td><input type="submit" value="确定"  id="submitBtn" onclick="regSubmit()"/>
+        		     <input type="reset" value="取消" id="resetBtn" onclick="regReset()"/>
+        		     </td>
+				     <td>&nbsp;</td>
+				    </tr>
+				  </table>
+			</div>
+			<div id="div_2">
+				<div id="allmap">
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>
+

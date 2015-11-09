@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+		<link rel="stylesheet" href="mycss/common.css" />
+		<link rel="stylesheet" href="mycss/login.css" />
+		<script type="text/javascript" src="jsLib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="myjs/login.js"></script>
+	</head>
+	<body>
+		<div id="login-wrapper" class="png_bg">
+			<div id="login-top">
+			</div>
+			<div id="login-content">
+					<p>
+						<label class="label_1" id ="error">
+						</label>
+					</p>
+					<br style="clear: both;">
+					<p>
+						<label class="label_2">Username</label>
+						<input value="" id="userName" class="text-input" type="text">
+					</p>
+					<br style="clear: both;">
+					<p>
+						<label class="label_2">Password</label>
+						<input id="passWord" class="text-input" type="password">
+					</p>
+					<br style="clear: both;">
+					<p>
+					    <input type="submit"  id="submitBtn" value="Register" class="button" onclick="Register()" style="margin-left:40px;"/>
+						<input type="submit"  id="submitBtn" value="Sign In" class="button" onclick="loginValidate()"/>
+					</p>
+			</div>
+		</div>
+		<div id="dummy"></div>
+		<div id="dummy2"></div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+body,div,p{
+	 padding:0;
+	 margin:0;
+}
+
+body{
+	width:100%;
+	height:100%;
+}
+#head{
+	width:600px;
+	height:10px;
+	margin: 10px auto;
+}
+#main{
+	width:600px;
+	height:640px;
+	margin: 0px auto;
+	border:1px solid #BFBFBF;
+}
+#div_1{
+	width:580px;
+	height:360px;
+	border-bottom: 1px solid #BFBFBF;
+	overflow: auto;
+	padding:10px;
+}
+#div_2{
+	width:580px;
+	height:35px;
+	padding:10px;
+	border-bottom: 1px solid #BFBFBF;
+	overflow: auto;
+}
+#div_3{
+	width:580px;
+	height:180px;
+	padding:10px;
+	border-bottom: 1px solid #BFBFBF;
+}
+#div_2 .empty{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+#div_2 .showRecord{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 100px;
+	padding-top: 10px;
+}
+#div_2 .addBackList{
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 150px;
+	padding-top: 10px;
+}
+#div_3 .chatMes{
+	width:560px;
+	height:100px;
+	padding:5px;
+}
+#div_3 #submitBtn{
+	width:100px;
+	height:30px;
+	margin-top:8px;
+	cursor: pointer;
+}

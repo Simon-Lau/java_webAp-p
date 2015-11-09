@@ -1,0 +1,60 @@
+/*
+ *  File:         dataTable_lp.css
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       tonyLp
+ *  Created:      2013-3-2
+ *  Language:     CSS
+ *
+ *  Note:		short for jquery-ui-1.8.21.custom.css
+ * include      ui-bg_highlight-soft_100_deedf7_1x100.png
+ * 				ui-bg_glass_80_d7ebf9_1x400.png
+ * 				ui-icons_3d80b3_256x240.png
+ * 				ui-icons_72a7cf_256x240.png
+ *  Copyright 2013 tonyLp. All Rights Reserved.
+ */
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { 
+		content: ""; 
+		display: table; 
+}
+	
+.ui-helper-clearfix:after {
+	 	clear: both; 
+}
+	 
+.ui-helper-clearfix { 
+		zoom: 1; 
+}
+.ui-widget-header { 
+	border: 1px solid #aed0ea; 
+	background: #deedf7 url(../images/ui-bg_highlight-soft_100_deedf7_1x100.png) 50% 50% repeat-x;
+    color: #222222; 
+    font-weight: bold; 
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif; font-size: 1em;
+    /* 如果觉得字体太文艺了，可以直接删除*/
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #aed0ea; 
+	background: #d7ebf9 url(../images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x; 
+	color: #2779aa; 
+}
+	 
+.ui-state-default .ui-icon { 
+	background-image: url(../images/ui-icons_3d80b3_256x240.png); 
+}
+
+.ui-icon-carat-2-n-s { 
+	background-position: -128px 0; 
+}
+
+.ui-icon { 
+	width: 16px; height: 16px; background-image: url(../images/ui-icons_72a7cf_256x240.png); 
+}
+
+.ui-icon-triangle-1-s { 
+	background-position: -64px -16px; 
+}
+
+.ui-icon-triangle-1-n { 
+	background-position: 0 -16px; 
+}

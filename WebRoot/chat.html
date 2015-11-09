@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>好友聊天</title>
+		<link rel="stylesheet" href="mycss/chat.css" />
+		<script type="text/javascript" src="jsLib/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="myjs/chat.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				init();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="remind"></div>
+		</div>
+		<div id="main">
+			<div id="div_1">
+				<div id ="content"></div>
+			</div>
+			<div id="div_2">
+				<span class="empty" onclick="clean()">清空当前记录</span>
+				<span class="showRecord" onclick="showRecord()">显示聊天纪录</span>
+				<span class="addBackList" onclick="addBack()">加入黑名单</span>
+			</div>
+			<div id="div_3">
+				昵称:<label id="username"></label>
+				<br />
+				<textarea class="chatMes">
+				</textarea>	
+				<p>
+					<input type="button" value="Send" id="submitBtn" onclick="sendMesg(null)"/>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
